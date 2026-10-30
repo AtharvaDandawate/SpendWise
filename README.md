@@ -1,6 +1,12 @@
 # SpendWise — Expense Tracker
 
-A responsive personal expense tracker built with **HTML5, CSS3, and vanilla JavaScript**. No frameworks, build tools, or API keys are required.
+A responsive personal expense tracker built with **HTML5, CSS3, and vanilla JavaScript**. SpendWise helps users record, organize, and monitor daily expenses through a clean and simple dashboard.
+
+## Live Demo
+
+🌐 **Website:** https://my-spend-wise-tracker.netlify.app/
+
+💻 **GitHub Repository:** https://github.com/AtharvaDandawate/SpendWise
 
 ## Features
 
@@ -8,21 +14,30 @@ A responsive personal expense tracker built with **HTML5, CSS3, and vanilla Java
 - Track each expense by title, amount, category, date, and optional note.
 - View total spending, transaction count, top category, and category breakdown.
 - Search expenses and filter by category or month.
-- Sort by date, amount, or title.
-- Save expense records and dark/light theme preference in `localStorage`.
-- Export all recorded expenses as a CSV file.
+- Sort transactions by date, amount, or title.
+- Save expense records and dark/light theme preference in browser `localStorage`.
+- Export recorded expenses as a CSV file.
 - Responsive layout for mobile, tablet, and desktop.
 - Print-friendly stylesheet.
 
-## Run locally
+## Technologies Used
 
-1. Download or clone this repository.
-2. Open `index.html` in a modern browser. For a more realistic local development setup, use the VS Code Live Server extension.
-3. Add a test expense, refresh the page, and verify that the record remains.
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Browser localStorage
 
-All data is stored locally in the browser. Clearing site data or switching browsers/devices will not carry entries over.
+## Run Locally
 
-## Project structure
+1. Clone or download this repository.
+2. Open the project folder in Visual Studio Code.
+3. Open `index.html` in a modern browser.
+4. Alternatively, use the VS Code Live Server extension.
+5. Add a test expense, refresh the page, and verify that the record remains.
+
+**Note:** All data is stored locally in the browser. Clearing site data or switching browsers/devices will not carry entries over.
+
+## Project Structure
 
 ```text
 spendwise/
@@ -32,62 +47,56 @@ spendwise/
 └── README.md
 ```
 
-## Concepts demonstrated
+## Concepts Demonstrated
 
-Semantic HTML, CSS Grid and Flexbox, media queries, form validation, DOM manipulation, event delegation, array methods (`filter`, `reduce`, `sort`, `find`), JSON serialization, `localStorage`, CSV export, and theme persistence.
+- Semantic HTML
+- CSS Grid and Flexbox
+- Responsive design and media queries
+- Form validation
+- DOM manipulation
+- Event delegation
+- JavaScript array methods (`filter`, `reduce`, `sort`, `find`)
+- JSON serialization
+- Browser localStorage
+- CSV export
+- Theme persistence
 
-## Deploy on Netlify
+## Deployment
 
-1. Push the project folder to a GitHub repository.
-2. Sign in to Netlify and choose **Add new site → Import an existing project**.
-3. Connect GitHub and select this repository.
-4. Since this is a static site, leave the build command blank and set the publish directory to the repository root (`.`).
-5. Deploy, then open the generated URL and test it on a phone-sized viewport.
+This project is deployed using Netlify.
 
-## Deploy on Vercel
+**Live website:** https://my-spend-wise-tracker.netlify.app/
 
-1. Push the project to GitHub.
-2. Import the repository in Vercel.
-3. Select the static/other framework option if prompted. No build command is required; use `.` as the output directory if the setup asks for one.
-4. Deploy and verify the live URL.
+The application is a static website and does not require a backend server, build command, or API keys.
 
-## Suggested Git workflow
+## Git Workflow
 
-Make small commits as each feature is completed; do not wait until the end.
+The project is maintained using Git and GitHub. Meaningful commits are used to track development progress.
+
+Example commands for future updates:
 
 ```bash
-git init
-git add index.html style.css script.js README.md
-git commit -m "chore: create SpendWise project structure"
-
-# After implementing and testing the form
 git add .
-git commit -m "feat: add expense form and validation"
-
-# After implementing persistence and CRUD
-git add .
-git commit -m "feat: persist expenses and support editing"
-
-# After filters, theme, and export are tested
-git add .
-git commit -m "feat: add filters theme toggle and CSV export"
-
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/spendwise.git
-git push -u origin main
+git commit -m "feat: improve expense tracker"
+git push
 ```
 
-Replace the example remote URL with your own repository URL. Commit regularly throughout development and keep the README up to date.
-
-## Final testing checklist
+## Final Testing Checklist
 
 - [ ] Add an expense with valid data.
-- [ ] Try submitting the form with missing fields and an invalid amount.
+- [ ] Test form validation with missing fields and invalid amounts.
 - [ ] Edit an existing expense.
-- [ ] Delete an expense and cancel a deletion to test confirmation.
-- [ ] Search, filter by category/month, and test each sort option.
+- [ ] Delete an expense and test deletion confirmation.
+- [ ] Search and filter expenses.
+- [ ] Test all sorting options.
 - [ ] Refresh the page and confirm expenses persist.
-- [ ] Toggle dark/light mode, refresh, and confirm the theme persists.
+- [ ] Toggle dark/light mode and confirm the preference persists.
 - [ ] Export CSV and open the downloaded file.
 - [ ] Test mobile, tablet, and desktop layouts.
-- [ ] Confirm the deployed website loads and the GitHub repository includes this README.
+- [ ] Confirm the deployed website loads successfully.
+
+## Author
+
+**Atharva Dandawate**
+
+Developed as a Web Technology project.
